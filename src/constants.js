@@ -1,2 +1,7 @@
-export const rapidMixDocVersion = '1.0.0';
-export const rapidMixDefaultLabel = 'rapidmixDefaultLabel';
+const rapidMixDocVersion = '1.0.0';
+const rapidMixDefaultLabel = 'rapidmixDefaultLabel';
+
+export default {
+  rapidMixDocVersion,
+  rapidMixDefaultLabel,
+};

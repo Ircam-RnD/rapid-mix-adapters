@@ -1,41 +1,45 @@
 // import tv4 from 'tv4';
 // TODO !!!
 
-/** @private */
-export const knownTargets = {
-  xmm: [ 'gmm', 'gmr', 'hhmm', 'hhmr' ]
-};
-
 /* * * * * * * * * * * * * * * RAPID-MIX * * * * * * * * * * * * * * * * * * */
 
 /** @private */
 const isValidRapidMixTrainingSet = trainingSet => {
-
+  return true;
 };
 
 /** @private */
-const isValidRapidMixConfiguration = config => {
-
+const isValidRapidMixMLConfiguration = config => {
+  return true;
 };
 
 /** @private */
-const isValidRapidMixPreProcessing = preProcessing => {
-
+const isValidRapidMixMLModel = model => {
+  return true;
 };
 
 /** @private */
-const isValidRapidMixModel = model => {
-
+const isValidRapidMixSignalProcessing = preProcessing => {
+  return true;
 };
 
 /* * * * * * * * * * * * * * * * * XMM * * * * * * * * * * * * * * * * * * * */
 
 /** @private */
 const isValidXmmTrainingSet = trainingSet => {
-
+  return true;
 };
 
 /** @private */
 const isValidXmmConfiguration = config => {
+  return true;
+};
 
+export default {
+  isValidRapidMixTrainingSet,
+  isValidRapidMixMLConfiguration,
+  isValidRapidMixMLModel,
+  isValidRapidMixSignalProcessing,
+  isValidXmmTrainingSet,
+  isValidXmmConfiguration,
 };

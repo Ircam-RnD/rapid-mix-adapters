@@ -45,6 +45,29 @@ const rapidMixToXmmTrainingSet = rmSet => {
   return setMaker.getTrainingSet();
 }
 
+/**
+ * Convert a RapidMix training set Object to a RapidLib training set Object.
+ */
+const rapidMixToRapidLibTrainingSet = rmSet => {
+  const rlSet = [];
+
+  for (let i = 0; i < rmSet.payload.data.length; i++) {
+    const phrase = rmSet.payload.data[i];
+
+    for (let j = 0; j < phrase.input.length; j++) {
+      const el = {
+        label: phrase.label,
+        input: phrase.input[j],
+        output: phrase.output.length > 0 ? phrase.output[j] : [],
+      };
+
+      rlSet.push(el);
+    }
+  }
+
+  return rlSet;
+};
+
 /* * * * * * * * * * * * * * * * * Model * * * * * * * * * * * * * * * * * * */
 
 /**
@@ -70,7 +93,7 @@ const rapidMixToXmmModel = rmModel => {
   return null;
 };
 
-export {
+export default {
   // xmmToRapidMixTrainingSet,
   rapidMixToXmmTrainingSet,
   xmmToRapidMixModel,
