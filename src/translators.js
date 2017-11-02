@@ -95,6 +95,7 @@ const rapidMixToXmmModel = rmModel => {
 
 export default {
   // xmmToRapidMixTrainingSet,
+  rapidMixToRapidLibTrainingSet,
   rapidMixToXmmTrainingSet,
   xmmToRapidMixModel,
   // rapidMixToXmmModel,
