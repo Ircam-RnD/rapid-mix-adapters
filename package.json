@@ -8,9 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "./bin/runner --transpile",
     "prewatch": "npm run transpile",
-    "watch": "./bin/runner --watch",
-    "serve": "./bin/runner --serve",
-    "postinstall": "npm run transpile"
+    "watch": "./bin/runner --watch"
   },
   "repository": {
     "type": "git",
