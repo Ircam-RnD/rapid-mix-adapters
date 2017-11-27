@@ -40,7 +40,7 @@ const rapidMixToXmmTrainingSet = rapidMixTrainingSet => {
 }
 
 /**
- *
+ * Convert a RapidMix configuration Object to an XMM training set Object.
  */
 const rapidMixToXmmConfig = rapidMixConfig => {
   return rapidMixConfig.payload;
