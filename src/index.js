@@ -93,6 +93,8 @@ export default {
   rapidMixToRapidLibTrainingSet,
   // xmm adapters
   rapidMixToXmmTrainingSet,
+  rapidMixToXmmConfig,
+
   xmmToRapidMixModel,
 
   // constants
