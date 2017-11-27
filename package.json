@@ -1,7 +1,7 @@
 {
   "name": "rapid-mix-adapters",
   "version": "1.0.0",
-  "description": "adapters between rapid-mix and its sub-libraries JSON formats",
+  "description": "Adapters between Rapid-Mix and its sub-libraries JSON formats",
   "main": "dist/index.js",
   "scripts": {
     "doc": "jsdoc -c conf.json",
