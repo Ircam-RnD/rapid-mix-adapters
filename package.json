@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "doc": "jsdoc -c conf.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "babel-tape-runner test/*_tests.js | tap-spec",
     "transpile": "./bin/runner --transpile",
     "prewatch": "npm run transpile",
     "watch": "./bin/runner --watch"
@@ -32,7 +32,7 @@
     "connect-route": "0.1.5",
     "klaw": "2.0.0",
     "source-map-support": "0.4.15",
-    "xmm-client": "github:ircam-rnd/xmm-client#v0.3.2"
+    "xmm-client": "github:ircam-rnd/xmm-client#v0.3.3"
   },
   "devDependencies": {
     "babel-core": "6.25.0",
