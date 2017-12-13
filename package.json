@@ -1,6 +1,6 @@
 {
   "name": "rapid-mix-adapters",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Adapters between Rapid-Mix and its sub-libraries JSON formats",
   "main": "dist/index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "connect-route": "0.1.5",
     "klaw": "2.0.0",
     "source-map-support": "0.4.15",
-    "xmm-client": "github:ircam-rnd/xmm-client#v0.3.3"
+    "xmm-client": "github:ircam-rnd/xmm-client#v0.3.4"
   },
   "devDependencies": {
     "babel-core": "6.25.0",
